@@ -1,0 +1,40 @@
+.btn {
+  display: flex;
+  width: fit-content;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0;
+  cursor: pointer;
+  border: 0.3rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.btn .image {
+  max-width: 5rem;
+  width: 3rem;
+  height: auto;
+  margin: 0rem 1rem 0rem 0.3rem;
+}
+
+.btn_primary {
+  color: #304269;
+  background: #fff;
+  transition: background 150ms ease-out;
+}
+
+.btn_primary:hover {
+  background: #eee;
+}
+
+.btn_aux {
+  color: #ffffff;
+  background: #f26101;
+  transition: all 150ms ease-in;
+}
+
+.btn_aux:hover {
+  background: #d65600;
+}

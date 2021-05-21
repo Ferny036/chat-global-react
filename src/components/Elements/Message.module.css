@@ -1,0 +1,56 @@
+:root {
+  --depth-blue: '#304269';
+  --white: '#FFFFFF';
+  --blue: '#91BED4';
+  --orange: '#F26101';
+  --blue-light: '#D9E8F5';
+}
+.message {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  max-width: 40%;
+  margin: 0.5rem;
+}
+.uMessage {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: flex-end;
+  max-width: 40%;
+  margin: 0.5rem;
+  align-self: flex-end;
+}
+
+.img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50rem;
+}
+
+.content {
+  max-width: 100%;
+  word-break: keep-all;
+  word-wrap: break-word;
+  line-break: strict;
+  background-color: #91bed4;
+  padding: 0.5rem 0.7rem;
+  margin: 0 0.2rem;
+  border-radius: 1rem;
+}
+
+.uContent {
+  max-width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f26101;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  margin: 0 0.2rem;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .message,
+  .uMessage {
+    max-width: 80%;
+  }
+}

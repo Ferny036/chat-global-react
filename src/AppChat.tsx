@@ -1,14 +1,8 @@
-import React from 'react'
-import { Channel } from './components/Channel';
-import {useUser} from './context/User'
+import { Channel } from './components/Layout/Channel'
+import Login from './components/Layout/Login'
+import { useUser } from './context/User'
 
 export const AppChat = () => {
-    const {user, login} = useUser();
-    
-    return (
-        <div>
-            <h1>App Chat</h1>
-            {user ? <Channel/>: <button onClick={login}>Login with google</button>}
-        </div>
-    );
-};
+  const { user } = useUser()
+  return <>{user ? <Channel /> : <Login />}</>
+}

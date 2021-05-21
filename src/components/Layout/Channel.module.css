@@ -1,0 +1,101 @@
+:root {
+  --depth-blue: '#304269';
+  --white: '#FFFFFF';
+  --blue: '#91BED4';
+  --orange: '#F26101';
+  --blue-light: '#D9E8F5';
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: inherit;
+  width: 70%;
+  margin: auto;
+}
+
+.chat {
+  background-color: white;
+  overflow: scroll;
+  width: 100%;
+  height: 80%;
+  font-size: 1.1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #304269;
+  width: inherit;
+  padding: 2rem;
+}
+
+.form_group {
+  width: 100%;
+  align-self: center;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  border: 0.1rem transparent black;
+  border-radius: 0.5rem;
+}
+
+.form_group:hover,
+.form_group:active,
+.form_group:focus {
+  box-shadow: 0.3rem 0.3rem 0.2rem black;
+}
+
+.input {
+  border: none;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+}
+
+.logoutBtn {
+  justify-self: flex-end;
+}
+
+.form_button {
+  border-radius: 0 0.3rem 0.3rem 0 !important;
+  align-self: flex-end;
+}
+
+.top {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+.title {
+  font-size: 3rem;
+  color: white;
+  text-decoration: underline;
+}
+.icon {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .chat {
+    border-radius: 0;
+  }
+}
